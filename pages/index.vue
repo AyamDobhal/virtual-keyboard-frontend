@@ -32,6 +32,7 @@
           </label>
           <input
             type="datetime-local"
+            step="1"
             name="sessionStartTime"
             class="border text-xl border-gray-300 rounded-md px-2 py-1"
             v-model="sessionStartTime"
@@ -44,6 +45,7 @@
           </label>
           <input
             type="datetime-local"
+            step="1"
             name="lastClear"
             class="border text-xl border-gray-300 rounded-md px-2 py-1"
             v-model="lastClear"
@@ -97,7 +99,7 @@ export default {
   components: { TableComponent, PaginationComponent },
   data() {
     return {
-      perPage: 10,
+      perPage: 5,
       currentPage: 1,
       pagesToShow: 1,
       totalPages: 10,
