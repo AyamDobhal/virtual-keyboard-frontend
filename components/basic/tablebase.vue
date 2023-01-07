@@ -1,7 +1,5 @@
 <template>
-  <div
-    class="-mx-4 mt-8 overflow-hidden shadow ring-2 ring-black sm:-mx-6 md:mx-0 md:rounded-lg"
-  >
+  <div class="-mx-4 mt-8 shadow sm:-mx-6 md:mx-0 overflow-hidden rounded-lg">
     <table class="min-w-full divide-y divide-black">
       <thead class="bg-gray-50">
         <tr>
@@ -9,7 +7,7 @@
             v-for="(header, index) in headers"
             :key="index"
             scope="col"
-            class="px-3 py-3.5 text-left text-sm font-semibold text-gray-900 lg:table-cell"
+            class="px-8 py-3.5 text-center text-2xl capitalize font-semibold text-gray-900 lg:table-cell"
           >
             {{ header }}
           </th>
@@ -20,7 +18,7 @@
           <td
             v-for="elem in Object.keys(item)"
             :key="`${elem}+${item.id}`"
-            class="px-3 py-4 text-sm text-gray-700 table-cell"
+            class="px-8 py-8 text-xl text-gray-700 table-cell text-center"
           >
             <template>{{ item[elem] }}</template>
           </td>

@@ -1,5 +1,5 @@
 <template>
-  <ul class="flex flex-row space-x-3 justify-end">
+  <ul class="flex flex-row space-x-3 justify-center">
     <li v-if="currentPage > 1" class="page-item">
       <a
         class="page-link"

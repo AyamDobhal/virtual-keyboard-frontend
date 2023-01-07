@@ -11,7 +11,7 @@ export default {
       { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
       {
         rel: "stylesheet",
-        href: "https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.2/tailwind.min.css",
+        href: "https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css",
       },
     ],
     script: [
@@ -22,9 +22,7 @@ export default {
   },
 
   buildModules: ["@nuxtjs/moment"],
-  modules: [
-    "@nuxtjs/axios",
-  ],
+  modules: ["@nuxtjs/axios"],
 
   plugins: ["~/plugins/provider.js"],
 
