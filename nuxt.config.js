@@ -20,6 +20,9 @@ export default {
       },
     ],
   },
+  build: {
+    postcss: null,
+  },
 
   buildModules: ["@nuxtjs/moment"],
   modules: ["@nuxtjs/axios"],
