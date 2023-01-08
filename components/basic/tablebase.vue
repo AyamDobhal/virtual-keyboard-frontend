@@ -7,7 +7,7 @@
             v-for="(header, index) in headers"
             :key="index"
             scope="col"
-            class="px-8 py-3.5 text-center text-2xl capitalize font-semibold text-gray-900 lg:table-cell"
+            class="px-8 py-3.5 text-center text-2xl capitalize font-semibold text-white bg-black lg:table-cell"
           >
             {{ header }}
           </th>
